@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="layerslider/css/layerslider.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <style>
+
+        .hos .col-xs-4,.hos .col-md-4,.hos .col-md-3,.hos .col-xs-3{margin:10px 0px;}
+        .hos a{margin:5px 0px;}
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            padding: 0;
+            font-family: wf_segoe-ui_normal, Tahoma, Verdana, Arial, sans-serif;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+       .hos a {
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+       .hos a.biliboard{margin:8px 0px;}
+        .biliboard {
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            background: #3AA5E0;
+            color: #333;
+            width:100%;
+            font: 13px open, tahoma;
+        }
+        .biliboard:hover, .biliboard:active
+        {
+            text-decoration: none;
+            color: #000;
+            border-color: #3AA5E0;
+            background: #8481BF;
+        }
+        .biliboard span
+        {
+            display: inline-block;
+            position: relative;
+            padding-right: 0;
+
+            transition: padding-right 0.5s;
+        }
+
+        .biliboard span:after
+        {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: -18px;
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+            margin-top: -10px;
+
+            background: rgba(0, 0, 0, 0);
+            border: 2px solid #FFF;
+            border-top: none;
+            border-right: none;
+
+            transition: opacity 0.5s, top 0.5s, right 0.5s;
+            transform: rotate(-45deg);
+        }
+
+        .biliboard:hover span, .biliboard:active span
+        {
+            padding-right: 30px;
+        }
+
+        .biliboard:hover span:after, .biliboard:active span:after
+        {
+            transition: opacity 0.5s, top 0.5s, right 0.5s;
+            opacity: 1;
+            border-color: #3AA5E0;
+            right: 0;
+            top: 40%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+
+
+<div id="box_wrapper">
+    <header id="header" class="header_white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-12">
+                    <a href="index.html" class="logo top_logo">
+                        <img src="example/logo.png" alt="">
+                        AASHA
+                    </a>
+                    <!-- header toggler -->
+                    <span id="toggle_menu"><span></span></span>
+                </div>
+                <div class="col-lg-9 col-md-8 text-right">
+                    
+                    <!-- main nav start -->
+                    <nav id="mainmenu_wrapper">
+                        <ul id="mainmenu" class="nav sf-menu"><li class="active">  <a href="index.html">Home</a> </li><li><a href="about.html">About Us</a></li><li><a href="Features.html">Features</a></li><li><a href="gallery-regular.html">Gallery</a></li><li><a href="Facilities.html">Facilities</a></li><li><a href="specialities.html">Specalities</a></li><li><a href="contact.html">Contact</a></li></ul><ul id="mainmenu" style="display:none" class="nav sf-menu">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+
+
+                            </li>
+
+                            <!-- pages -->
+                            <li>
+                                <a href="about.html">About Us</a>
+
+                            </li>
+                            <!-- eof pages -->
+                            <!-- features -->
+                            <li>
+                                <a href="Features.html">Features</a>
+
+                            </li>
+                            <!-- eof features -->
+                            <!-- gallery -->
+                            <li>
+                                <a href="gallery-regular.html">Gallery</a>
+
+
+
+
+
+
+                            </li>
+                            <!-- eof gallery -->
+                            <!-- blog -->
+                            <li>
+                                <a href="Facilities.html">Facilities</a>
+
+                            </li>
+                            <!-- eof blog -->
+                            <!-- shop -->
+                            <li>
+                                <a href="specialities.html">Specalities</a>
+
+                            </li>
+                            <!-- eof shop -->
+                            <li>
+                                <a href="contact.html">Contact</a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- eof main nav -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="breadcrumbs" class="breadcrumbs_section color_section section_padding_25 gradient table_section table_section_md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-center">
+                    <h1 class="thin">About Us</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <body style="background:#f4f4f4">
+        <div id="page">
+            <div id="header">
+
+            </div>
+            <div id="content" style="padding:30px 0px;">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="well" style="background:#fff;">
+                                <img src="img/specialities.jpg" alt="specialities" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="well" style="background:#fff;">
+                                <h2>Multi Speciality Hospital</h2>
+                                <p>
+                                    Aasha Hospital the first and only corporate hospitals situated in Ananthapur, are one of the pioneer corporate health care hospitals in the state of Andhra Pradesh. Since its inception, Aasha hospital have been in the forefront in offering International standard corporate health care facilities. As leaders in super specialty healthcare in the state of Andhra Pradesh.
+
+
+                                    The Hospital has trained staff including nurses; full time doctors and support staff to provide round the clock personalized attention and care leading to faster recovery of patient.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="hos">
+                        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style="padding:20px;">
+
+
+                            <div class="col-md-4 col-md-offset-4">
+
+                                <a href="cardiology.html" class="biliboard  btn-block electronic">
+                                    <span>LAPROSCOPIC SURGERY</span>
+                                </a>
+                                <a href="GYNEACOLOGY.html" class="biliboard radial">
+                                    <span>GYNECOLOGY</span>
+                                </a>
+                                <a href="opthamology.html" class="biliboard">
+                                    <span>OPTHAMOLOGY</span>
+                                </a>
+                                <a href="neurology.html" class="biliboard">
+                                    <span>NEUROLOGY</span>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+
+
+                                <a href="urology.html" class="biliboard">
+                                    <span>UROLOGY</span>
+                                </a>
+                                <a href="orthopedic.html" class="biliboard  btn-block electronic">
+                                    <span>ORTHOPEDICS</span>
+                                </a>
+                                <a href="diabetology" class="biliboard radial">
+                                    <span>DIABETOLOGY</span>
+                                </a>
+                                <a href="ENT.html" class="biliboard">
+                                    <span>ENT</span>
+                                </a>
+
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <a href="psychiatrist.html" class="biliboard">
+                                    <span>PSYCHIATRIST</span>
+                                </a>
+                                <a href="dermatologist.html" class="biliboard">
+                                    <span>DERMATOLOGY</span>
+                                </a>
+                                <a href="chestphysician.html" class="biliboard  btn-block electronic">
+                                    <span>CHEST PHYSICIAN</span>
+                                </a>
+                                <a href="#" class="biliboard">
+                                    <span>OPERATION</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+    <footer id="contact" class="light_section parallax section_padding_75"><div class="container"><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Contacts</h3><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-location-outline big-icon"></i></div><div class="media-body"><p> Aasha Hospitals,# 7/201, Court road ,Anantapur , Andhra Pradesh, India - 515001</p></div></div><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-phone-outline big-icon"></i></div><div class="media-body">9440351344</div></div><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-mail big-icon"></i></div><div class="media-body"><a href="mailto:info@aashahospitals.com">info@aashahospitals.com</a></div></div></div><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Subscribe to us</h3><form class="contact-form" method="post" action="index.html"><p class="contact-form-name"><label for="name">Name <span class="required">*</span></label><input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name"></p><p class="contact-form-email"><label for="email">Email <span class="required">*</span></label><input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email"> </p><p class="contact-form-message"><label for="message">Message</label><textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea></p><p class="contact-form-submit topmargin40"><button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">Send Message</button></p></form></div><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Infrastructure</h3><div class="widget widget_flickr"><ul id="flickr"></ul></div></div></div></footer><footer id="contact" style='display:none' class="light_section parallax section_padding_75">
+        <div class="container">
+            <div class="col-sm-4 to_animate" data-animation="fadeIn">
+                <h3 class="module-header">Contacts</h3>
+
+                <div class="media">
+                    <div class="media-left size_small">
+                        <i class="highlight rt-icon-location-outline big-icon"></i>
+                    </div>
+                    <div class="media-body">
+                        PO Box 54321 Some str. 765, Los Angeles,
+                        California, United States
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left size_small">
+                        <i class="highlight rt-icon-phone-outline big-icon"></i>
+                    </div>
+                    <div class="media-body">
+                        +12 345 678 9123
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left size_small">
+                        <i class="highlight rt-icon-mail big-icon"></i>
+                    </div>
+                    <div class="media-body">
+                        <a href="mailto:info@aashahospitals.com">info@company.com</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4 to_animate" data-animation="fadeIn">
+                <h3 class="module-header">Subscribe to us</h3>
+                <form class="contact-form" method="post" action="index.html">
+                    <p class="contact-form-name">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name">
+                    </p>
+                    <p class="contact-form-email">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email">
+                    </p>
+                    <p class="contact-form-message">
+                        <label for="message">Message</label>
+                        <textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+                    </p>
+                    <p class="contact-form-submit topmargin40">
+                        <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">Send Message</button>
+                    </p>
+                </form>
+
+            </div>
+            <div class="col-sm-4 to_animate" data-animation="fadeIn">
+                <h3 class="module-header">Infrastructure</h3>
+                <div class="widget widget_flickr">
+                    <ul id="flickr"></ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="copyright" class="light_section section_padding_50">
+        <div class="container">
+            <div class="row to_animate">
+                <div class="col-sm-12 text-center">
+                    <a href="index-2.html" class="logo vertical_logo grey">
+                        <img src="example/logo.png" alt=""><br>AASHA
+                    </a>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <p>Copyright 2015. AASHA by <a target='_blank'  href="http://www.konnectsu.com">Konnectsu Technologies</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div><!-- eof #box_wrapper -->
+<div class="preloader">
+    <div class="preloader_image"></div>
+</div>
+<script src="js/compressed.js"></script>
+</body>
+<!-- Mirrored from AASHA.modernwebtemplates.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2015 12:27:47 GMT -->
+</html>
