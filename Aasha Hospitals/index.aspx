@@ -1,27 +1,12 @@
-﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <title>Aasha Hospitals</title>
-    <meta charset="utf-8">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edgecontact
-    <![endif]-->
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main_master.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Aasha_Hospitals.index" %>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<style>
+    #header {
+        top:-10px;
+    }
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css" id="color-switcher-link"/>
-    <link rel="stylesheet" href="css/animations.css"> 
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="layerslider/css/layerslider.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-</head>
-<body>
+</style>
 <div id="box_wrapper">
 <section id="topline" class="grey_section section_padding_0 table_section table_section_md">
     <div class="container">
@@ -36,11 +21,7 @@
                 
                 <span>
                     <i class="rt-icon-location2 highlight"></i> Aasha Hospitals, # 7/201, Court road,Ananthapur
-                    
-                  
-                  
                 </span>
-
                 <span>
                     <i class="rt-icon-newspaper highlight"></i> +91-8554–245755
                 </span>
@@ -48,43 +29,13 @@
                 <span>
                     <i class="rt-icon-email2 highlight"></i> info@aashahospitals.com
                 </span>
-                
             </div>
-
         </div>
     </div>
 </section>
+</asp:Content>
 
-<header id="header" class="header_white">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-xs-12">
-				<a href="index.html" class="logo top_logo">
-		            <img src="example/logo.png" alt="">
-		            AASHA
-		        </a>
-				<!-- header toggler -->    
-				<span id="toggle_menu"><span></span></span>				
-			</div>
-			<div class="col-lg-9 col-md-8 text-right">
-                <div style="display:none" class="widget widget_search">
-                    <form role="search" method="get" id="searchform" class="searchform form-inline" action="index.html">
-                        <div class="form-group">
-                            <input type="text" value="" name="search" id="search" class="form-control" placeholder="">
-                            <label class="screen-reader-text" for="search">Search for:</label>
-                        </div>
-                        <button type="submit" id="searchsubmit" class="theme_button">Search</button>
-                    </form>
-                </div>
-                <!-- main nav start -->
-                <nav id="mainmenu_wrapper">
-                    <ul id="mainmenu" class="nav sf-menu"><li class="active">  <a href="index.html">Home</a> </li><li><a href="about.html">About Us</a></li><li><a href="Features.html">Features</a></li><li><a href="gallery-regular.html">Gallery</a></li><li><a href="Facilities.html">Facilities</a></li><li><a href="specialities.html">Specalities</a></li><li><a href="contact.html">Contact</a></li></ul><ul id="mainmenu" style="display:none" class="nav sf-menu"><li class="active">  <a href="index.html">Home</a> </li><li><a href="about.html">About Us</a></li><li><a href="Features.html">Features</a></li><li><a href="gallery-regular.html">Gallery</a></li><li><a href="Facilities.html">Facilities</a></li><li><a href="specialities.html">Specalities</a></li><li><a href="contact.html">Contact</a></li></ul>
-                </nav>
-                <!-- eof main nav -->
-			</div>
-		</div>
-	</div>
-</header>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <section id="mainslider" class="light_section">
     <div id="layerslider" style="width: 1920px; height: 800px;">
@@ -582,7 +533,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                                     <a class="soc-twitter" href="#" title="Twitter" data-toggle="tooltip">#</a>
                                     <a class="soc-google" href="#" title="Google" data-toggle="tooltip">#</a>
                                 </p>
-                            </div>
+                            </div>  
                         </div>
                     </div> <!-- eof item -->
 
@@ -659,8 +610,8 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             <div class="media-left">
                                 <div class="teaser_icon highlight main_bg_color size_small round">
                                     <i class="fa fa-user-md"></i>
-                                </div>
-                            </div>
+                                </div> 
+                            </div> 
                             <div class="media-body">
                                 <h3 class="media-heading">
                                     <a href="about.html">Qualified Doctors</a>
@@ -710,7 +661,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
 
         </div>
     </div>
-</section>-->
+</section>
 
 
 <section id="about" class="light_section">
@@ -735,7 +686,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                         </div>
                         <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <div class="media">
+                                <div class="media"> 
                                     <div class="media-left">
                                         <a href="#">
                                             <img src="example/recent_post1.jpg" alt="">
@@ -745,7 +696,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                                         To utilize the best practices from across the world to provide the highest quality care to each patient in the most cost-effective manner.
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                     
@@ -762,7 +713,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img src="example/recent_post2.jpg" alt="">
+                                            <img src="example/recent_post2.jpg" alt=""/>
                                         </a>
                                     </div>
                                     <div class="media-body">
@@ -896,13 +847,13 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                     </div>
                     <div class="tab-pane fade" id="tab2">
                         <p class="featured-tab-image">
-                            <img src="example/gallery/02.jpg" alt="">
+                            <img src="example/gallery/02.jpg" alt=""/>
                         </p>
                         Aasha hospital have been in the forefront in offering International standard corporate health care facilities. As leaders in super specialty Healthcare.
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <p class="featured-tab-image">
-                            <img src="example/gallery/03.jpg" alt="">
+                            <img src="example/gallery/03.jpg" alt=""/>
                         </p>
                         The Hospital has trained staff including nurses; full time doctors and support staff to provide round the clock personalized attention and care leading to faster recovery of patient.
 
@@ -989,33 +940,4 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
     </div>
 </section>
 
-<footer id="contact" class="light_section parallax section_padding_75"><div class="container"><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Contacts</h3><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-location-outline big-icon"></i></div><div class="media-body"><p> Aasha Hospitals,# 7/201, Court road ,Anantapur , Andhra Pradesh, India - 515001</p></div></div><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-phone-outline big-icon"></i></div><div class="media-body">9440351344</div></div><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-mail big-icon"></i></div><div class="media-body"><a href="mailto:info@aashahospitals.com">info@aashahospitals.com</a></div></div></div><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Subscribe to us</h3><form class="contact-form" method="post" action="index.html"><p class="contact-form-name"><label for="name">Name <span class="required">*</span></label><input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name"></p><p class="contact-form-email"><label for="email">Email <span class="required">*</span></label><input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email"> </p><p class="contact-form-message"><label for="message">Message</label><textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea></p><p class="contact-form-submit topmargin40"><button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">Send Message</button></p></form></div><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Infrastructure</h3><div class="widget widget_flickr"><ul id="flickr"></ul></div></div></div></footer><footer id="contact" style='display:none' class="light_section parallax section_padding_75"><div class="container"><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Contacts</h3><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-location-outline big-icon"></i></div><div class="media-body"><p> Aasha Hospitals,# 7/201, Court road ,Anantapur , Andhra Pradesh, India - 515001</p></div></div><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-phone-outline big-icon"></i></div><div class="media-body">9440351344</div></div><div class="media"><div class="media-left size_small"><i class="highlight rt-icon-mail big-icon"></i></div><div class="media-body"><a href="mailto:info@aashahospitals.com">info@aashahospitals.com</a></div></div></div><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Subscribe to us</h3><form class="contact-form" method="post" action="index.html"><p class="contact-form-name"><label for="name">Name <span class="required">*</span></label><input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name"></p><p class="contact-form-email"><label for="email">Email <span class="required">*</span></label><input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email"> </p><p class="contact-form-message"><label for="message">Message</label><textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea></p><p class="contact-form-submit topmargin40"><button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">Send Message</button></p></form></div><div class="col-sm-4 to_animate" data-animation="fadeIn"><h3 class="module-header">Infrastructure</h3><div class="widget widget_flickr"><ul id="flickr"></ul></div></div></div></footer>
-
-<section id="copyright" class="light_section section_padding_50">
-    <div class="container">
-        <div class="row to_animate">
-            <div class="col-sm-12 text-center">
-                <a href="index-2.html" class="logo vertical_logo grey">
-                    <img src="example/logo.png" alt=""><br>AASHA
-                </a>
-            </div>
-            <div class="col-sm-12 text-center">
-                <p>Copyright 2015.AASHA HOSPITALS <a href="index.html"></a></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-</div><!-- eof #box_wrapper -->
-
-<div class="preloader">
-    <div class="preloader_image"></div>
-</div>
-    
-        <script src="js/compressed.js"></script>
-        <script src="js/order-form.js"></script>
-
-    </body>
-
-
-</html>
+</asp:Content>
