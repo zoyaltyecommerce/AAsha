@@ -5,32 +5,29 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Aasha_Hospitals.Code;
-using System.Net.Mail;
 using System.Data;
+using System.Net.Mail;
 
 namespace Aasha_Hospitals
 {
-    public partial class Main_master : System.Web.UI.MasterPage
+    public partial class Index_master : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-       
-       
         protected void btn_submit_Click1(object sender, EventArgs e)
         {
             try
             {
 
-           
+          
             SERVICES obj = new SERVICES();
             obj.SERVICE_NAME = BLL.ReplaceQuote(txt_name.Text);
             obj.SERVICE_EMAILID = BLL.ReplaceQuote(txt_email.Text);
             obj.SERVICE_PHONE = BLL.ReplaceQuote(txt_phone.Text);
             obj.SERVICE_MESSAGE = BLL.ReplaceQuote(txt_area.Text);
-           
+
             bool status = BLL.INSERT_SERVICE(obj);
             {
                 clear_controls();

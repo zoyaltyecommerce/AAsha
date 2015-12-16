@@ -99,7 +99,9 @@
     <Content Include="about.aspx" />
     <Content Include="about.html" />
     <Content Include="about2.html" />
+    <Content Include="accommodation.aspx" />
     <Content Include="animation.html" />
+    <Content Include="appointment.aspx" />
     <Content Include="bin\Aasha Hospitals.dll" />
     <Content Include="bin\Aasha Hospitals.pdb" />
     <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
@@ -140,6 +142,7 @@
     <Content Include="breadcrumbs5.html" />
     <Content Include="cardiology.aspx" />
     <Content Include="cardiology.html" />
+    <Content Include="Cardiologyori.aspx" />
     <Content Include="cart-full.html" />
     <Content Include="cart-left.html" />
     <Content Include="cart-right.html" />
@@ -171,6 +174,7 @@
     <Content Include="dermatologist.html" />
     <Content Include="Diabetology.aspx" />
     <Content Include="Diabetology.html" />
+    <Content Include="dialsys.aspx" />
     <Content Include="ENT.aspx" />
     <Content Include="ENT.html" />
     <Content Include="event-single-full.html" />
@@ -308,23 +312,36 @@
     <Content Include="header6.html" />
     <Content Include="header7.html" />
     <Content Include="icons.html" />
+    <Content Include="icu.aspx" />
     <Content Include="Images\la.jpeg" />
     <Content Include="Images\lapp.jpg" />
     <Content Include="Images\lapro.jpg" />
     <Content Include="Images\laproscopic.jpg" />
     <Content Include="Images\laproscopy.jpg" />
+    <Content Include="img\ambulance1.jpg" />
     <Content Include="img\background_section.png" />
+    <Content Include="img\bed.jpg" />
+    <Content Include="img\bed1.JPG" />
+    <Content Include="img\cardiology1 - Copy.png" />
+    <Content Include="img\cardiology1.png" />
+    <Content Include="img\cardiology2.jpg" />
     <Content Include="img\chest1.jpg" />
     <Content Include="img\chest2.jpg" />
     <Content Include="img\ChestPain.jpg" />
+    <Content Include="img\dailsys.jpg" />
     <Content Include="img\dermatologist.jpg" />
     <Content Include="img\dermatologist1.jpg" />
     <Content Include="img\Diabetic.jpg" />
+    <Content Include="img\dialysis1.jpg" />
+    <Content Include="img\dialysis3.jpg" />
+    <Content Include="img\doctor1.jpg" />
     <Content Include="img\ENT sub.jpg" />
     <Content Include="img\equipment.jpg" />
     <Content Include="img\final diabetics.jpg" />
     <Content Include="img\gynac.jpg" />
     <Content Include="img\gynecology.jpg" />
+    <Content Include="img\icu.jpg" />
+    <Content Include="img\icu1.gif" />
     <Content Include="img\neurologic.jpg" />
     <Content Include="img\neurology.jpg" />
     <Content Include="img\ophthalmologic - Copy.jpg" />
@@ -350,6 +367,8 @@
     <Content Include="img\pattern7.png" />
     <Content Include="img\pattern8.png" />
     <Content Include="img\pattern9.png" />
+    <Content Include="img\pharmacy.jpg" />
+    <Content Include="img\pharmacy1.jpg" />
     <Content Include="img\plus.jpg" />
     <Content Include="img\preloader.gif" />
     <Content Include="img\prettyPhoto\facebook\btnNext.png" />
@@ -415,6 +434,7 @@
     <Content Include="fonts\socicond41d.eot" />
     <Content Include="aasha hospitals.zip" />
     <Content Include="Main_master.Master" />
+    <Content Include="Index_master.Master" />
     <None Include="Properties\PublishProfiles\aashaatest - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\aashaatest - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -425,6 +445,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="pharmacy.aspx" />
     <Content Include="Popover requires tooltip.html" />
     <Content Include="pricing.html" />
     <Content Include="product-full.html" />
@@ -475,12 +496,33 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="accommodation.aspx.cs">
+      <DependentUpon>accommodation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accommodation.aspx.designer.cs">
+      <DependentUpon>accommodation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appointment.aspx.cs">
+      <DependentUpon>appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appointment.aspx.designer.cs">
+      <DependentUpon>appointment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cardiology.aspx.cs">
       <DependentUpon>cardiology.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cardiology.aspx.designer.cs">
       <DependentUpon>cardiology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiologyori.aspx.cs">
+      <DependentUpon>Cardiologyori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cardiologyori.aspx.designer.cs">
+      <DependentUpon>Cardiologyori.aspx</DependentUpon>
     </Compile>
     <Compile Include="chestphysician.aspx.cs">
       <DependentUpon>chestphysician.aspx</DependentUpon>
@@ -513,6 +555,13 @@
     </Compile>
     <Compile Include="Diabetology.aspx.designer.cs">
       <DependentUpon>Diabetology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dialsys.aspx.cs">
+      <DependentUpon>dialsys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dialsys.aspx.designer.cs">
+      <DependentUpon>dialsys.aspx</DependentUpon>
     </Compile>
     <Compile Include="ENT.aspx.cs">
       <DependentUpon>ENT.aspx</DependentUpon>
@@ -549,12 +598,26 @@
     <Compile Include="GYNEACOLOGY.aspx.designer.cs">
       <DependentUpon>GYNEACOLOGY.aspx</DependentUpon>
     </Compile>
+    <Compile Include="icu.aspx.cs">
+      <DependentUpon>icu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="icu.aspx.designer.cs">
+      <DependentUpon>icu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index_master.Master.cs">
+      <DependentUpon>Index_master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index_master.Master.designer.cs">
+      <DependentUpon>Index_master.Master</DependentUpon>
     </Compile>
     <Compile Include="Main_master.Master.cs">
       <DependentUpon>Main_master.Master</DependentUpon>
@@ -583,6 +646,13 @@
     </Compile>
     <Compile Include="ORTHOPEDIC.aspx.designer.cs">
       <DependentUpon>ORTHOPEDIC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacy.aspx.cs">
+      <DependentUpon>pharmacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pharmacy.aspx.designer.cs">
+      <DependentUpon>pharmacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="psychiatrist.aspx.cs">

@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
+ 
 <section id="breadcrumbs" class="breadcrumbs_section color_section section_padding_25 gradient table_section table_section_md">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 text-center text-md-left">
+            <div class="col-md-12 text-center text-md-center">
                 <h1 class="thin">FACILITIES</h1>
             </div>
             <div class="col-md-6 text-center text-md-right">
@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row text-center">
 
-            <div class="col-sm-8 col-md-8 col-lg-8">
+            <div class="col-sm-9 col-md-8 col-lg-11">
 
                                     <article class="post format-standard">
                         
@@ -61,7 +61,7 @@
                                 </header>
                                 <!-- .entry-header -->
 
-                                <p>Aasha Hospital the first and only corporate hospitals situated in Ananthapur, are one of the pioneer corporate health care hospitals in the state of Andhra Pradesh. Since its inception, Aasha hospital have been in the forefront in offering International standard corporate health care facilities. As leaders in super specialty healthcare in the state of Andhra Pradesh.
+                                <p>Aasha Hospitalis one of the finest corporatehospitals situated in Anantapur, is one of thepioneer corporate health care hospitals in the state of Andhra Pradesh. Since its inception, Aasha hospital have been in the forefront in offering International standard corporate health care facilities. As leaders in super specialty healthcare in the state of Andhra Pradesh.
 
 
 The Hospital has trained staff including nurses; full time doctors and support staff to provide round the clock personalized attention and care leading to faster recovery of patient.</p>
@@ -262,7 +262,7 @@ The Hospital has trained staff including nurses; full time doctors and support s
                                 </header>
                                 <!-- .entry-header -->
 
-                                <p>We having the latest modern <h3 class="module-header">Infrastructure</h3> and medical facilities to ensure that patients do get the best available care. Aasha Hospital doctors know it all and perform their duty in the ICU diligently, without any neglect. Perfect care and concern makes the unit a safe place for recovery</p>
+                                <p>We having the latest modern  and medical facilities to ensure that patients do get the best available care. Aasha Hospital doctors know it all and perform their duty in the ICU diligently, without any neglect. Perfect care and concern makes the unit a safe place for recovery</p>
                                
                                
                               
@@ -305,17 +305,16 @@ The Hospital has trained staff including nurses; full time doctors and support s
 			</div>
 			<div class="col-lg-6 text-center text-lg-right">
 				<div class="widget widget_mailchimp">
-                    <form id="signup" action="index.html" method="get">
+                    <div id="signup" >
                         <div class="form-group inline-block">
                             <input class="form-control" name="email" id="mailchimp_email" type="email" placeholder="Email Address">
                         </div>
                         <button type="submit" class="theme_button color1">Sign Up!</button>
                         <div id="response"></div>
-                    </form>
+                    </div>
                 </div>
 			</div>
 		</div>
 	</div>
 </section>
-
 </asp:Content>

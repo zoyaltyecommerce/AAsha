@@ -83,7 +83,21 @@ namespace Aasha_Hospitals.Code
         public static bool INSERT_SERVICE(SERVICES obj)
         {
             bool status = false;
-            status = BLL.ExecuteNonQuery("EXEC USP_SERVICES @OPERATION='INSERT_SERVICES',@SERVICE_NAME='" + obj.SERVICE_NAME + "',@SERVICE_EMAILID='" + obj.SERVICE_EMAILID + "',@SERVICE_PHONE='" + obj.SERVICE_PHONE + "',@SERVICE_MESSAGE='" + obj.SERVICE_MESSAGE + "',@SERVICE_STATUS=1");
+            status = BLL.ExecuteNonQuery("EXEC USP_SERVICES @OPERATION='INSERT_SERVICES',@SERVICE_NAME='" + obj.SERVICE_NAME + "',@SERVICE_EMAILID='" + obj.SERVICE_EMAILID + "',@SERVICE_PHONE='" + obj.SERVICE_PHONE + "',@SERVICE_MESSAGE='" + obj.SERVICE_MESSAGE + "',@SERVICE_STATUS=1,@SERVICE_CREATEDBY=1");
+            return status;
+        }
+
+        public static bool INSERT_VISITOR(DOCTOR_VISIT obj)
+        {
+            bool status = false;
+            status = BLL.ExecuteNonQuery("EXEC USP_VISIT @OPERATION='INSERT_VISITOR',@VISIT_NAME='"+obj.VISIT_NAME + "',@VISIT_DEPARTMENT='"+obj.VISIT_DEPARTMENT + "',@VISIT_PHONE='"+obj.VISIT_PHONE + "',@VISIT_STATUS=1,@VISIT_CREATEDBY=1");
+            return status;
+        }
+
+        public static bool INSERT_PATIENT(APPOINTMENT obj)
+        {
+            bool status = BLL.ExecuteNonQuery("EXEC USP_APPOINTMENT @OPERATION='PATIENT_INSERT',@PATIENT_NAME='" + obj.PATIENT_NAME + "',@PATIENT_EMAILID='" + obj.PATIENT_EMAILID + "',@PATIENT_PHONE='" + obj.PATIENT_PHONE + "',@PATIENT_ADDRESS='" + obj.PATIENT_ADDRESS + "',@PATIENT_MESSAGE='" + obj.PATIENT_MESSAGE + "',@PATIENT_STATUS=1,@PATIENT_CREATEDBY=1");
+
             return status;
         }
     }

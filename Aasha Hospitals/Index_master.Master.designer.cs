@@ -10,7 +10,7 @@
 namespace Aasha_Hospitals {
     
     
-    public partial class Main_master {
+    public partial class Index_master {
         
         /// <summary>
         /// head control.

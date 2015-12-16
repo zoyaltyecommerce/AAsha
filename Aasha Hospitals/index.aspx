@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main_master.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Aasha_Hospitals.index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index_master.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Aasha_Hospitals.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
@@ -7,36 +7,18 @@
     }
 
 </style>
-<div id="box_wrapper">
-<section id="topline" class="grey_section section_padding_0 table_section table_section_md">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 text-center text-md-left">
-<div id="social">
-    <a class="soc-facebook" href="#" title="Facebook">#</a><a class="soc-twitter" href="#" title="Twitter">#</a><a class="soc-google" href="#" title="Google">#</a><a class="soc-linkedin" href="#" title="LinkedIn">#</a><a class="soc-dribbble" href="#" title="Dribble">#</a>
-</div>                
-            </div>
+    
 
-            <div class="col-md-9 text-center text-md-right">
-                
-                <span>
-                    <i class="rt-icon-location2 highlight"></i> Aasha Hospitals, # 7/201, Court road,Ananthapur
-                </span>
-                <span>
-                    <i class="rt-icon-newspaper highlight"></i> +91-8554–245755
-                </span>
-
-                <span>
-                    <i class="rt-icon-email2 highlight"></i> info@aashahospitals.com
-                </span>
-            </div>
-        </div>
-    </div>
-</section>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+ 
 
+     <script>
+        $(document).ready(function () {
+            document.getElementById("li_home").className = "active";
+        });
+    </script>
 <section id="mainslider" class="light_section">
     <div id="layerslider" style="width: 1920px; height: 800px;">
         <!-- slide 1 -->
@@ -45,9 +27,9 @@
                     transition2d:44">
 
             <!-- slide background -->
-            <img src="example/slide_bg.jpg" class="ls-bg" alt="Slide background">
+            <img src="example/slide_bg.jpg" class="ls-bg" alt="Slide background"/>
 
-            <img class="ls-l" 
+            <img class="ls-l"
                 src="example/slide_woman.png" 
                 alt="" 
                 style="top: 0px; left: 800px;"
@@ -63,7 +45,7 @@
                         transformoriginin:25% 25% 0;
                         scalexout:1.5;
                         scaleyout:1.5;
-                ">
+                "/>
 
             <p class="ls-l" 
                style="top: 230px; left: 380px; white-space: nowrap; font-size: 50px; font-weight: 300;"
@@ -117,16 +99,16 @@
                         rotatexin:-90;
                         transformoriginin:50% top 0;
                 ">
-                <a href="specialities.html">
+                <a href="appointment.aspx">
                     <i class="fa fa-ambulance"></i>
                 </a>
-                <a href="specialities.html">
+                <a href="appointment.aspx">
                     <i class="fa fa-user-md"></i>
                 </a>
-                <a href="specialities.html">
+                <a href="appointment.aspx">
                     <i class="fa fa-lightbulb-o"></i>
                 </a>
-                <a href="specialities.html">
+                <a href="appointment.aspx">
                     <i class="fa fa-medkit"></i>
                 </a>
             </p>
@@ -211,8 +193,8 @@
                         rotatexin:-90;
                         transformoriginin:50% top 0;
                 ">
-                <a href="about.html" class="theme_button">About Us</a>
-                <a href="specialities.html" class="theme_button color2">Specialities</a>
+                <a href="about.aspx" class="theme_button">About Us</a>
+                <a href="specialities.aspx" class="theme_button color2">Specialities</a>
             </div>
      
         </div>
@@ -263,19 +245,19 @@
                         rotatexin:-90;
                         transformoriginin:50% top 0;
                 ">
-                <a href="about.html" class="theme_button color2">Make Appointment</a>
+                <a href="appointment.aspx" class="theme_button color2">Make Appointment</a>
             </div>
      
         </div>
 
     </div>
 </section>
-
+    
 <section id="mainteasers" class="color_section section_padding_0 columns_padding_0 table_section table_section_lg">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4 bg_teaser after_cover color_bg_1">
-                <img src="example/teaser01.jpg" alt="">
+                <img src="example/teaser01.jpg" alt=""/>
                 <div class="teaser_content media">
                     <div class="media-left">
                         <h4 class="grey media-heading">Doctor</h4>
@@ -283,32 +265,49 @@
                         
                     </div>
                     <div class="media-body">
-                    	<form class="order-form" id="order_form">
+                    	<div class="order-form" id="order_form">
                              <div class="form-group">
                                   <label for="fullname">Full Name</label>
-                                  <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Full Name">
+                                
+                                 <asp:TextBox ID="txt_fullname" runat="server" placeholder="Full Name" class="form-control"></asp:TextBox>
+                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ValidationGroup="make an order"
+                                        ControlToValidate="txt_fullname" ErrorMessage="Please enter your name" Display="Dynamic" SetFocusOnError="true" ForeColor="White">
+                                    </asp:RequiredFieldValidator>
                              </div>
                              <div class="form-group">
                                   <label for="department">Full Name</label>
-                                  <select class="form-control" name="department" id="department">
+                                <%--  <select class="form-control" name="department" id="department">
                                        <option>Cardiology</option>
                                        <option>Pharmacy</option>
                                        <option>Physiotherapy</option>
-                                  </select>
+                                  </select>--%>
+                                 <asp:TextBox ID="txt_dept" runat="server" placeholder="Department" class="form-control"></asp:TextBox>
+                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ValidationGroup="make an order"
+                                        ControlToValidate="txt_dept" ErrorMessage="Please enter department" Display="Dynamic" SetFocusOnError="true" ForeColor="White">
+                                    </asp:RequiredFieldValidator>
                              </div>
                              <div class="form-group">
                                   <label for="phone">Phone</label>
-                                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+                                  
+                                 <asp:TextBox ID="txt_phone" runat="server" class="form-control" placeholder="Phone"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ValidationGroup="make an order"
+                                        ControlToValidate="txt_phone" ErrorMessage="Please enter phone-number" Display="Dynamic" ForeColor="White" SetFocusOnError="true">
+                                    </asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Display="Dynamic" ForeColor="White"
+                                        ControlToValidate="txt_phone" ErrorMessage="Enter the valid phone number"
+                                        ValidationExpression="[0-9]{10}" ValidationGroup="make an order">
+                                    </asp:RegularExpressionValidator>
                              </div>
 
-                             <button type="submit" class="theme_button">Make An Order</button>
-                        </form>
+                             
+                            <asp:Button ID="btn_submit" runat="server"  class="theme_button" Text="Appointment" OnClick="btn_submit_Click" ValidationGroup="make an order" />
+                        </div> 
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 bg_teaser after_cover color_bg_2">
-                <img src="example/teaser02.jpg" alt="">
+                <img src="example/teaser02.jpg" alt=""/>
                 <div class="teaser_content media">
                     <div class="media-left">
                         <h4 class="grey media-heading">Patient</h4>
@@ -441,7 +440,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                 <p>Equipped with the finest resources of medical science, the hospital emphasizes on relief, reassurance, recovery and rehabilitation.”
                     </p>
                     <div>
-                        <a href="about.html" class="theme_button inverse">About Us</a>
+                        <a href="about.aspx" class="theme_button inverse">About Us</a>
                     </div>
 </div>
         </div>
@@ -457,7 +456,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             <img src="example/team/01.jpg" alt="">
                             <div class="caption">
                                 <h3>
-                                    <a href="team-single.html">Michael Bean</a>
+                                    <a href="team-single.aspx">Michael Bean</a>
                                 </h3>
                                 <p>Director</p>
                                 <p class="text-center social-icons">
@@ -474,7 +473,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             <img src="example/team/02.jpg" alt="">
                             <div class="caption">
                                 <h3>
-                                    <a href="team-single.html">Michael Bean</a>
+                                    <a href="team-single.aspx">Michael Bean</a>
                                 </h3>
                                 <p>Director</p>
                                 <p class="text-center social-icons">
@@ -599,7 +598,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             </div>
                             <div class="media-body">
                                 <h3 class="media-heading">
-                                    <a href="about.html">Modern Clinic</a>
+                                    <a href="about.aspx">Modern Clinic</a>
                                 </h3>
                                 <p>There are many kind of state of art latest equipments</p>
                             </div>
@@ -614,7 +613,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             </div> 
                             <div class="media-body">
                                 <h3 class="media-heading">
-                                    <a href="about.html">Qualified Doctors</a>
+                                    <a href="about.aspx">Qualified Doctors</a>
                                 </h3>
                                 <p>There are many surgen specialists in our hospital for each speciality deportment.</p>
                             </div>
@@ -630,7 +629,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             </div>
                             <div class="media-body">
                                 <h3 class="media-heading">
-                                    <a href="about.html">Emergency</a>
+                                    <a href="about.aspx">Emergency</a>
                                 </h3>
                                 <p>We have a state of the art ambulance services</p>
                             </div>
@@ -645,7 +644,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                             </div>
                             <div class="media-body">
                                 <h3 class="media-heading">
-                                    <a href="about.html">Health Care</a>
+                                    <a href="about.aspx">Health Care</a>
                                 </h3>
                                 <p>We have a fully equipped laboratory headed by two Pathologists.</p>
                             </div>
@@ -808,19 +807,19 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                 
                 <ul class="list1 darklinks">
                     <li>
-                        <a href="specialities.html">Cardiology</a>
+                        <a href="specialities.aspx">Cardiology</a>
                     </li>
                     <li>
-                        <a href="specialities.html">OPTHAMOLOGY</a>
+                        <a href="specialities.aspx">OPTHAMOLOGY</a>
                     </li>
                     <li>
-                        <a href="specialities.html">urology</a>
+                        <a href="specialities.aspx">urology</a>
                     </li>
                     <li>
-                        <a href="specialities.html">DIABETOLOFY</a>
+                        <a href="specialities.aspx">DIABETOLOFY</a>
                     </li>
                     <li>
-                        <a href="specialities.html">PSYCHIATRIST</a>
+                        <a href="specialities.aspx">PSYCHIATRIST</a>
                     </li>
                 </ul>
 
@@ -841,7 +840,7 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
                         <p class="featured-tab-image">
-                            <img src="example/gallery/01.jpg" alt="">
+                            <img src="example/gallery/01.jpg" alt=""/>
                         </p>
                         Sophisticated medical care is very essential these days, but nevertheless, it is essential that accommodation provided must be equally attractive for the patient to feel comfortable. Aasha Hospital has gone that extra way to provide a room environ that will promote the well-being.
                     </div>
@@ -940,4 +939,5 @@ The Hospital is air conditioned in all the patient care areas, providing the rig
     </div>
 </section>
 
+       </div>
 </asp:Content>

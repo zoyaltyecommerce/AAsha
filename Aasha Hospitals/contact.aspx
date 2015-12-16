@@ -1,9 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main_master.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="Aasha_Hospitals.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <script>
+        $(document).ready(function () {
+            document.getElementById("li_contact").className = "active";
+        });
+    </script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
+  
 <section id="breadcrumbs" class="breadcrumbs_section color_section section_padding_25 gradient table_section table_section_md">
     <div class="container">
         <div class="row">
@@ -29,43 +34,41 @@
                         <label for="name">Full Name <span class="required">*</span></label>
                        <%-- <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Full Name">--%>
                           <asp:TextBox ID="txt_fullname" runat="server" class="form-control" placeholder="Full Name" size="30"></asp:TextBox>
-                      <%--  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ValidationGroup="submit"
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ValidationGroup="submit"
                                         ControlToValidate="txt_fullname" ErrorMessage="Please enter your name" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
-                                    </asp:RequiredFieldValidator>--%>
+                                    </asp:RequiredFieldValidator>
                     </p>
                     <p class="contact-form-email">
                         <label for="email">Email address<span class="required">*</span></label>
                        
                         <%-- <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email Address">--%>
                          <asp:TextBox ID="txt_email" runat="server" size="30" class="form-control" placeholder="Email Address"></asp:TextBox>
-                        <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ValidationGroup="submit"
+                       <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ValidationGroup="submit"
                                         ControlToValidate="txt_email" ErrorMessage="Enter valid Email" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
                                     </asp:RequiredFieldValidator>
                                     <asp:RegularExpressionValidator Display="Dynamic" ForeColor="White" ID="RegularExpressionValidator2" runat="server" ValidationGroup="submit"
                                         ErrorMessage="Enter a valid email address"
                                         ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                                         ControlToValidate="txt_email">
-                                    </asp:RegularExpressionValidator>--%>
+                                    </asp:RegularExpressionValidator>
                     </p>
                     <p class="contact-form-subject">
                         <label for="subject">Subject<span class="required">*</span></label>
                        <%-- <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Subject">--%>
                          <asp:TextBox ID="txt_sub" runat="server" class="form-control" placeholder="Subject" size="30"></asp:TextBox>
-                         <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ValidationGroup="submit"
-                                        ControlToValidate="txt_sub" ErrorMessage="Please enter your name" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
-                                    </asp:RequiredFieldValidator>--%>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ValidationGroup="submit"
+                                        ControlToValidate="txt_sub" ErrorMessage="Please enter your subject" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
+                                    </asp:RequiredFieldValidator>
                     </p>
                     <p class="contact-form-message">
                         <label for="message">Message</label>
                       <%--  <textarea aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>--%>
                           <asp:TextBox ID="txt_area" runat="server" class="form-control" placeholder="Message" TextMode="MultiLine"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ValidationGroup="submit"
-                                        ControlToValidate="txt_area" ErrorMessage="Please enter your name" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
+                                        ControlToValidate="txt_area" ErrorMessage="Please enter your message" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
                                     </asp:RequiredFieldValidator>
                     </p>
                     <p class="contact-form-submit">
-                       
-                        <%-- <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">Send Message</button>--%>
                          <asp:Button ID="btn_submit" runat="server" Text="Send Message" class="theme_button"  ValidationGroup="submit" OnClick="btn_submit_Click" />
                     </p>
 
@@ -75,17 +78,41 @@
             <div class="col-sm-4 to_animate">
                 <h3 class="module-header">Contact Info</h3>
                 <ul class="list1 no-bullets">
+                 
                     <li>
                         <div class="media">
                             <div class="media-left">
                                 <div class="highlight2 size_small">
                                     <i class="rt-icon-location-outline"></i>
-                                </div>
-                            </div>
+                               </div>
+                           </div>
                             <div class="media-body">
-                                Aasha Hospitals, # 7/201, Court road , Anantapur , Andhra Pradesh, India - 515001
-                            </div>
+                       
+                               <p> Aasha Hospitals, # 7/201, Court road , Anantapur , Andhra Pradesh, India - 515001</p>
                         </div>
+                           </div>
+                          <div class="media">
+                            <div class="media-left">
+                                <div class="highlight2 size_small">
+                                    <i class="rt-icon-location-outline"></i>
+                               </div>
+                           </div>
+                            <div class="media-body">
+                                      
+                            <p>Aasha super speciality Hospital, #21/7, Near VIMS, (OPD), Cantonment, Bellary- 583104
+                            ph:08392-244469.</p>
+                                </div>
+                              </div>
+                         <div class="media">
+                            <div class="media-left">
+                                <div class="highlight2 size_small">
+                                    <i class="rt-icon-location-outline"></i>
+                               </div>
+                           </div>
+                            <div class="media-body">
+                                 <p>D.no.2/133,yellanuru road, beside, vijayalakshmi theatre, tadipatri-515411</p>
+                                </div>
+                             </div>
                     </li>
 
                     <li>
@@ -126,7 +153,7 @@
                             </div>
                         </div>
                     </li>
-                    
+                  
                 </ul>
             </div>
         </div>
@@ -209,11 +236,11 @@
             attachSecretMessage(marker, '<h3>Map title</h3><p>Map HTML description</p>');
             }
         </script>
-       <%-- <style type="text/css">
+    <style type="text/css">
             #contact
             {
                 display:none;
             }
-        </style>--%>
-    </form>
+        </style>
+   
 </asp:Content>

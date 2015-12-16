@@ -239,6 +239,33 @@ namespace Aasha_Hospitals.Code
         public int SERVICE_STATUS { set; get; }
         public DateTime SERVICE_MODIFIEDDATE { set; get; }
     }
+    public class DOCTOR_VISIT : SMVTS_MAIN
+    {
+        public int VISIT_ID { set; get; }
+        public string VISIT_NAME { set; get; }
+        public string VISIT_DEPARTMENT { set; get; }
+        public string VISIT_PHONE { set; get; }
+        public int VISIT_CREATEDBY { set; get; }
+        public DateTime VISIT_CREATEDDATE { set; get; }
+        public int VISIT_MODIFIEDBY { set; get; }
+        public DateTime VISIT_MODIFIEDDATE { set; get; }
+        public int VISIT_STATUS { set; get; }
+    }
+    public class APPOINTMENT:SMVTS_MAIN
+    {
+     public int   PATIENT_ID { set; get; }
+public string  PATIENT_NAME { set; get; }
+        public string PATIENT_EMAILID { set; get; }
+        public string PATIENT_PHONE { set; get; }
+        public string PATIENT_ADDRESS { set; get; }
+        public string PATIENT_MESSAGE { set; get; }
+        public int PATIENT_CREATEDBY { set; get; }
+        public  DateTime PATIENT_CREATEDDATE { set; get; } 
+        public int PATIENT_MODIFIEDBY { set; get; }
+        public DateTime PATIENT_MODIFIEDDATE { set; get; }
+        public int PATIENT_STATUS { set; get; }
+
+    }
 
 
 }

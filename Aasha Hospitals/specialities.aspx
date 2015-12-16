@@ -97,7 +97,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-center">
-                    <h1 class="thin">About Us</h1>
+                    <h1 class="thin">SPECIALITIES</h1>
                 </div>
 
             </div>
@@ -116,11 +116,11 @@
                                 <img src="img/specialities.jpg" alt="specialities" class="img-responsive" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6">
+                         <div class="col-md-6 col-lg-6">
                             <div class="well" style="background:#fff;">
                                 <h2>Multi Speciality Hospital</h2>
                                 <p>
-                                    Aasha Hospital the first and only corporate hospitals situated in Ananthapur, are one of the pioneer corporate health care hospitals in the state of Andhra Pradesh. Since its inception, Aasha hospital have been in the forefront in offering International standard corporate health care facilities. As leaders in super specialty healthcare in the state of Andhra Pradesh.
+                                    Aasha Hospital is one of the finest corporate hospitals situated in Anantapur, is one of the pioneer corporate health care hospitals in the state of Andhra Pradesh. Since its inception, Aasha hospital have been in the forefront in offering International standard corporate health care facilities. As leaders in super specialty healthcare in the state of Andhra Pradesh.
 
 
                                     The Hospital has trained staff including nurses; full time doctors and support staff to provide round the clock personalized attention and care leading to faster recovery of patient.
@@ -177,8 +177,8 @@
                                 <a href="chestphysician.aspx" class="biliboard  btn-block electronic">
                                     <span>CHEST PHYSICIAN</span>
                                 </a>
-                                <a href="#" class="biliboard">
-                                    <span>OPERATION</span>
+                                <a href="Cardiologyori.aspx" class="biliboard">
+                                    <span>CARDIOLOGY</span>
                                 </a>
                             </div>
 
