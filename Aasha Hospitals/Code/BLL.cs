@@ -100,5 +100,20 @@ namespace Aasha_Hospitals.Code
 
             return status;
         }
+        internal static DataTable VISITOR_MAIL(DOCTOR_VISIT obj)
+        {
+            DataTable dt = BLL.ExecuteQuery("EXEC USP_VISIT @VISIT_EMAILID='" + obj.VISIT_EMAILID + "',@OPERATION='VISITOR_MAIL''");
+            return dt;
+        }
+        internal static DataTable CONTACT_MAIL(CONTACTUS obj)
+        {
+            DataTable dt = BLL.ExecuteQuery("EXEC USP_CONTACTUS @CONTACT_EMAIL='" + obj.CONTACT_EMAIL + "',@OPERATION='CONTACT_MAIL''");
+            return dt;
+        }
+        internal static DataTable SERVICE_MAIL(SERVICES obj)
+        {
+            DataTable dt = BLL.ExecuteQuery("EXEC USP_SERVICES @OPERATION='SERVICE_MAIL', @SERVICE_EMAILID='" + obj.SERVICE_EMAILID + "'");
+            return dt;
+        }
     }
 }

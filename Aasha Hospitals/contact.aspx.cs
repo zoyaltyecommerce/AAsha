@@ -29,12 +29,12 @@ namespace Aasha_Hospitals
             obj.CONTACT_SUBJECT = BLL.ReplaceQuote(txt_sub.Text);
             obj.CONTACT_MESSAGE = BLL.ReplaceQuote(txt_area.Text);
             obj.CONTACT_CREATED_BY = 1;
-
+                DataTable dt_contact = BLL.CONTACT_MAIL(obj);
             bool status = BLL.INSERTCONTACT(obj);
             {
                 clear_controls();
             }
-            DataTable dt_contact = new DataTable();
+     
             MailMessage mailmessage = new MailMessage();
             mailmessage.IsBodyHtml = true;
 

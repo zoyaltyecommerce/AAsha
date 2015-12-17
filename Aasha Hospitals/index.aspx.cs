@@ -25,13 +25,17 @@ namespace Aasha_Hospitals
             obj.VISIT_DEPARTMENT = BLL.ReplaceQuote( txt_dept.Text);
             obj.VISIT_PHONE = BLL.ReplaceQuote(txt_phone.Text);
             obj.CREATEDBY = 1;
-
+            DataTable dt_visit = BLL.VISITOR_MAIL(obj);
             bool status = BLL.INSERT_VISITOR(obj);
+          
+           
             {
+
+               
                 clear_controls();
             }
 
-            DataTable dt_visit = new DataTable();
+          
             MailMessage mailmessage = new MailMessage();
             mailmessage.IsBodyHtml = true;
 

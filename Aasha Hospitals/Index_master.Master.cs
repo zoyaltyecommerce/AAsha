@@ -27,12 +27,12 @@ namespace Aasha_Hospitals
             obj.SERVICE_EMAILID = BLL.ReplaceQuote(txt_email.Text);
             obj.SERVICE_PHONE = BLL.ReplaceQuote(txt_phone.Text);
             obj.SERVICE_MESSAGE = BLL.ReplaceQuote(txt_area.Text);
-
+                DataTable dt_service = BLL.SERVICE_MAIL(obj);
             bool status = BLL.INSERT_SERVICE(obj);
             {
                 clear_controls();
             }
-            DataTable dt_service = new DataTable();
+          
             MailMessage mailmessage = new MailMessage();
             mailmessage.IsBodyHtml = true;
 
