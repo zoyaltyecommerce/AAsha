@@ -70,6 +70,7 @@ namespace Aasha_Hospitals
             txt_email.Text = "";
             txt_sub.Text = "";
             txt_area.Text = "";
+            txt_phone.Text = "";
         }
     }
 }
