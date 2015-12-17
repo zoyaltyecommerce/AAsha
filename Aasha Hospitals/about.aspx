@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main_master.Master" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="Aasha_Hospitals.about" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   
+   <script>
+         window.onload= function() {
+             document.getElementById("li_aboutus").className = "active";
+        };
+    </script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

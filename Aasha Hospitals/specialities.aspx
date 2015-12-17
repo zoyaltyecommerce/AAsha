@@ -89,6 +89,11 @@
         }
 
     </style>
+      <script>
+         window.onload= function() {
+             document.getElementById("li_special").className = "active";
+        };
+    </script>
 
 </asp:Content>
 

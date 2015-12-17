@@ -21,10 +21,7 @@
             position: relative;
             z-index: 1000;
         }
-
     </style>
-    
-    
 </head>
 <body>
    

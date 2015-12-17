@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main_master.Master" AutoEventWireup="true" CodeBehind="gallery-regular.aspx.cs" Inherits="Aasha_Hospitals.gallery_regular" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <script>
+         window.onload= function() {
+             document.getElementById("li_gall").className = "active";
+        };
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     

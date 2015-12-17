@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main_master.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="Aasha_Hospitals.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <script>
-        $(document).ready(function () {
+         window.onload= function() {
             document.getElementById("li_contact").className = "active";
-        });
+        };
     </script>
 
 </asp:Content>

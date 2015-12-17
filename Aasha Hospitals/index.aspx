@@ -8,16 +8,17 @@
 
 </style>
     
-
+     
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  
 
      <script>
-        $(document).ready(function () {
+     
+         window.onload= function() {
             document.getElementById("li_home").className = "active";
-        });
+        };
     </script>
 <section id="mainslider" class="light_section">
     <div id="layerslider" style="width: 1920px; height: 800px;">
