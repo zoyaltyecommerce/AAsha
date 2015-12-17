@@ -19,16 +19,21 @@ namespace Aasha_Hospitals
 
         protected void btn_submit_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+           
             DOCTOR_VISIT obj = new DOCTOR_VISIT();
             obj.VISIT_NAME = BLL.ReplaceQuote( txt_fullname.Text);
             obj.VISIT_EMAILID = BLL.ReplaceQuote(txt_email.Text);
             obj.VISIT_DEPARTMENT = BLL.ReplaceQuote( txt_dept.Text);
             obj.VISIT_PHONE = BLL.ReplaceQuote(txt_phone.Text);
             obj.CREATEDBY = 1;
-            DataTable dt_visit = BLL.VISITOR_MAIL(obj);
-            bool status = BLL.INSERT_VISITOR(obj);
-          
            
+            bool status = BLL.INSERT_VISITOR(obj);
+            DataTable dt_visit = BLL.VISITOR_MAIL(obj);
+              
+
             {
 
                
@@ -56,6 +61,11 @@ namespace Aasha_Hospitals
             catch (Exception ae)
             {
                 // Label1.Text = ae.Message;
+            }
+            }
+            catch(Exception EX)
+            {
+
             }
         }
         public void clear_controls()

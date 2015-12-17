@@ -53,6 +53,16 @@
                                     </asp:RegularExpressionValidator>
                     </p>
                     <p class="contact-form-subject">
+                         <asp:TextBox ID="txt_phone" runat="server" class="form-control" placeholder="phone"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ValidationGroup="submit"
+                                        ControlToValidate="txt_phone" ErrorMessage="Please enter phone-number" Display="Dynamic" ForeColor="red" SetFocusOnError="true">
+                                    </asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Display="Dynamic" ForeColor="red"
+                                        ControlToValidate="txt_phone" ErrorMessage="Enter the valid phone number"
+                                        ValidationExpression="[0-9]{10}" ValidationGroup="submite">
+                                    </asp:RegularExpressionValidator>
+                    </p>
+                    <p class="contact-form-subject">
                         <label for="subject">Subject<span class="required">*</span></label>
                        <%-- <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Subject">--%>
                          <asp:TextBox ID="txt_sub" runat="server" class="form-control" placeholder="Subject" size="30"></asp:TextBox>

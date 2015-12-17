@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 to_animate" data-animation="fadeIn">
-                    <h3 class="module-header">Subscribe to us</h3>
+                    <h3 class="module-header">Ask Us a Question?</h3>
                     <div class="contact-form">
                         <p class="contact-form-name">
                             <label for="name">Name <span class="required">*</span></label>
@@ -148,13 +148,13 @@
             <div class="container">
                 <div class="row to_animate">
                     <div class="col-sm-12 text-center">
-                        <a href="index-2.html" class="logo vertical_logo grey">
+                        <a href="index.aspx" class="logo vertical_logo grey">
                             <img src="example/logo.png" alt="" /><br />
                             AASHA
                 </a>
                     </div>
                     <div class="col-sm-12 text-center">
-                        <p>Copyright 2015.AASHA HOSPITALS <a href="index.html"></a></p>
+                        <p>Copyright 2015.AASHA HOSPITALS <a href="index.aspx"></a></p>
                     </div>
                 </div>
             </div>

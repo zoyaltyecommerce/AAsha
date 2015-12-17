@@ -26,6 +26,7 @@ namespace Aasha_Hospitals
             CONTACTUS obj = new CONTACTUS();
             obj.CONTACT_FULLNAME = BLL.ReplaceQuote(txt_fullname.Text);
             obj.CONTACT_EMAIL = BLL.ReplaceQuote(txt_email.Text);
+                obj.CONTACT_PHONE = BLL.ReplaceQuote(txt_phone.Text);
             obj.CONTACT_SUBJECT = BLL.ReplaceQuote(txt_sub.Text);
             obj.CONTACT_MESSAGE = BLL.ReplaceQuote(txt_area.Text);
             obj.CONTACT_CREATED_BY = 1;

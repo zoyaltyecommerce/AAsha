@@ -76,7 +76,7 @@ namespace Aasha_Hospitals.Code
         public static bool INSERTCONTACT(CONTACTUS obj)
         {
             bool status = false;
-            status = BLL.ExecuteNonQuery("EXEC USP_CONTACTUS @OPERATION='INESERT_CONTACT',@CONTACT_FULLNAME='" + obj.CONTACT_FULLNAME + "',@CONTACT_EMAIL='" + obj.CONTACT_EMAIL + "',@CONTACT_SUBJECT='" + obj.CONTACT_SUBJECT + "',@CONTACT_MESSAGE='" + obj.CONTACT_MESSAGE + "',@CONTACT_STATUS=1,@CONTACT_CREATED_BY='"+obj.CONTACT_CREATED_BY+"'");
+            status = BLL.ExecuteNonQuery("EXEC USP_CONTACTUS @OPERATION='INESERT_CONTACT',@CONTACT_FULLNAME='" + obj.CONTACT_FULLNAME + "',@CONTACT_EMAIL='" + obj.CONTACT_EMAIL + "',@CONTACT_SUBJECT='" + obj.CONTACT_SUBJECT + "',@CONTACT_MESSAGE='" + obj.CONTACT_MESSAGE + "',@CONTACT_STATUS=1,@CONTACT_CREATED_BY='"+obj.CONTACT_CREATED_BY+"',@CONTACT_PHONE='"+obj.CONTACT_PHONE+"'");
             return status;
         }
 

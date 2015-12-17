@@ -224,6 +224,8 @@ namespace Aasha_Hospitals.Code
         public DateTime CONTACT_CREATED_DATE { set; get; }
         public int CONTACT_MODIFIEDBY { set; get; }
         public DateTime CONTACT_MODIFIEDDATE { set; get; }
+
+        public string CONTACT_PHONE { set; get; }
     }
 
     public class SERVICES : SMVTS_MAIN
