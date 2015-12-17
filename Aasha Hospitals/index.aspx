@@ -275,8 +275,19 @@
                                         ControlToValidate="txt_fullname" ErrorMessage="Please enter your name" Display="Dynamic" SetFocusOnError="true" ForeColor="White">
                                     </asp:RequiredFieldValidator>
                              </div>
+                            <div class="form-group">
+                                 <asp:TextBox ID="txt_email" runat="server" size="30" class="form-control" placeholder="Email Address"></asp:TextBox>
+                       <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ValidationGroup="submit"
+                                        ControlToValidate="txt_email" ErrorMessage="Enter valid Email" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
+                                    </asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator Display="Dynamic" ForeColor="White" ID="RegularExpressionValidator2" runat="server" ValidationGroup="submit"
+                                        ErrorMessage="Enter a valid email address"
+                                        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                        ControlToValidate="txt_email">
+                                    </asp:RegularExpressionValidator>
+                            </div>
                              <div class="form-group">
-                                  <label for="department">Full Name</label>
+                                  <label for="department"></label>
                                 <%--  <select class="form-control" name="department" id="department">
                                        <option>Cardiology</option>
                                        <option>Pharmacy</option>
@@ -286,6 +297,7 @@
                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ValidationGroup="make an order"
                                         ControlToValidate="txt_dept" ErrorMessage="Please enter department" Display="Dynamic" SetFocusOnError="true" ForeColor="White">
                                     </asp:RequiredFieldValidator>
+                                 
                              </div>
                              <div class="form-group">
                                   <label for="phone">Phone</label>

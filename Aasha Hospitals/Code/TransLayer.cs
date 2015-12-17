@@ -242,6 +242,8 @@ namespace Aasha_Hospitals.Code
     public class DOCTOR_VISIT : SMVTS_MAIN
     {
         public int VISIT_ID { set; get; }
+
+        public string VISIT_EMAILID { set; get; }
         public string VISIT_NAME { set; get; }
         public string VISIT_DEPARTMENT { set; get; }
         public string VISIT_PHONE { set; get; }

@@ -90,7 +90,7 @@ namespace Aasha_Hospitals.Code
         public static bool INSERT_VISITOR(DOCTOR_VISIT obj)
         {
             bool status = false;
-            status = BLL.ExecuteNonQuery("EXEC USP_VISIT @OPERATION='INSERT_VISITOR',@VISIT_NAME='"+obj.VISIT_NAME + "',@VISIT_DEPARTMENT='"+obj.VISIT_DEPARTMENT + "',@VISIT_PHONE='"+obj.VISIT_PHONE + "',@VISIT_STATUS=1,@VISIT_CREATEDBY=1");
+            status = BLL.ExecuteNonQuery("EXEC USP_VISIT @OPERATION='INSERT_VISITOR',@VISIT_NAME='"+obj.VISIT_NAME + "',@VISIT_DEPARTMENT='"+obj.VISIT_DEPARTMENT + "',@VISIT_PHONE='"+obj.VISIT_PHONE + "',@VISIT_STATUS=1,@VISIT_CREATEDBY=1,@VISIT_EMAILID='"+obj.VISIT_EMAILID+"'");
             return status;
         }
 

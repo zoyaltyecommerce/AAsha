@@ -21,6 +21,7 @@ namespace Aasha_Hospitals
         {
             DOCTOR_VISIT obj = new DOCTOR_VISIT();
             obj.VISIT_NAME = BLL.ReplaceQuote( txt_fullname.Text);
+            obj.VISIT_EMAILID = BLL.ReplaceQuote(txt_email.Text);
             obj.VISIT_DEPARTMENT = BLL.ReplaceQuote( txt_dept.Text);
             obj.VISIT_PHONE = BLL.ReplaceQuote(txt_phone.Text);
             obj.CREATEDBY = 1;
@@ -38,10 +39,10 @@ namespace Aasha_Hospitals
             client.Credentials = new System.Net.NetworkCredential("info@linkskart.com", ".santhu143");
             mailmessage.From = new System.Net.Mail.MailAddress("info@linkskart.com");
             // mailmessage.From = new MailAddress("santhosh@pragatipadh.com");
-            mailmessage.To.Add(dt_visit.Rows[0]["SERVICE_EMAILID"].ToString());
+            mailmessage.To.Add(dt_visit.Rows[0]["VISIT_EMAILID"].ToString());
             // mailmessage.CC.Add(emailid);
             mailmessage.Subject = "your account is created";
-            mailmessage.Body = "<p> Dear " + dt_visit.Rows[0]["SERVICE_EMAILID"].ToString() + " " + ",<br /> <br />Your account is successfully SUBMITED " + " please <a href=\"http://www.linkskart.com\">Click Here</a> to visit LINKSKART.</p></div>";
+            mailmessage.Body = "<p> Dear " + dt_visit.Rows[0]["VISIT_EMAILID"].ToString() + " " + ",<br /> <br />Your account is successfully SUBMITED " + " please <a href=\"http://www.linkskart.com\">Click Here</a> to visit LINKSKART.</p></div>";
             client.EnableSsl = false;
             try
             {
@@ -56,6 +57,7 @@ namespace Aasha_Hospitals
         public void clear_controls()
         {
             txt_fullname.Text = "";
+            txt_email.Text = "";
             txt_dept.Text = "";
             txt_phone.Text = "";
         }
