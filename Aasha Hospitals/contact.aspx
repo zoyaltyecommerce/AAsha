@@ -53,7 +53,7 @@
                                     </asp:RegularExpressionValidator>
                     </p>
                     <p class="contact-form-subject">
-                         <asp:TextBox ID="txt_phone" runat="server" class="form-control" placeholder="phone"></asp:TextBox>
+                         <asp:TextBox ID="txt_phone" runat="server" class="form-control" placeholder="phone" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ValidationGroup="submit"
                                         ControlToValidate="txt_phone" ErrorMessage="Please enter phone-number" Display="Dynamic" ForeColor="red" SetFocusOnError="true">
                                     </asp:RequiredFieldValidator>

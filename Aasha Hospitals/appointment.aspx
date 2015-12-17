@@ -58,7 +58,7 @@
                     <p class="contact-form-subject">
                         <label for="subject">Phone<span class="required">*</span></label>
                        <%-- <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Subject">--%>
-                         <asp:TextBox ID="txt_phone" runat="server" class="form-control" placeholder="Phone" size="30"></asp:TextBox>
+                         <asp:TextBox ID="txt_phone" runat="server" class="form-control" placeholder="Phone" size="30" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ValidationGroup="submit"
                                         ControlToValidate="txt_phone" ErrorMessage="Please enter your phone" Display="Dynamic" SetFocusOnError="true" ForeColor="red">
                                     </asp:RequiredFieldValidator>
