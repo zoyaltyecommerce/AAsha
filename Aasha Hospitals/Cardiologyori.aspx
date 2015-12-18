@@ -34,7 +34,7 @@
                                 <div class="entry-content">
                                     <header class="entry-header">
                                         <h2 class="entry-title">
-                                            <a href="blog-single-full.html" rel="bookmark">Cardiology</a>
+                                            <a href="#" rel="bookmark">Cardiology</a>
                                         </h2>
                                         <div class="entry-meta">
                                             <span class="author">
@@ -79,7 +79,7 @@
                                             <div class="entry-content">
                                                 <header class="entry-header">
                                                     <h2 class="entry-title">
-                                                        <a href="blog-single-full.html" rel="bookmark">Cardiology</a>
+                                                        <a href="#" rel="bookmark">Cardiology</a>
                                                     </h2>
 
 

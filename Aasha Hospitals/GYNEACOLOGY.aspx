@@ -32,7 +32,7 @@
                                 <div class="entry-content">
                                     <header class="entry-header">
                                         <h2 class="entry-title">
-                                            <a href="blog-single-full.html" rel="bookmark">Gynecology</a>
+                                            <a href="#" rel="bookmark">Gynecology</a>
                                         </h2>
                                         <div class="entry-meta">
                                             <span class="author">
@@ -77,7 +77,7 @@
                                             <div class="entry-content">
                                                 <header class="entry-header">
                                                     <h2 class="entry-title">
-                                                        <a href="blog-single-full.html" rel="bookmark">Gynecology</a>
+                                                        <a href="#" rel="bookmark">Gynecology</a>
                                                     </h2>
 
 

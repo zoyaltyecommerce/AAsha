@@ -32,7 +32,7 @@
                                 <div class="entry-content">
                                     <header class="entry-header">
                                         <h2 class="entry-title">
-                                            <a href="blog-single-full.html" width="1000" rel="bookmark">Dermatology</a>
+                                            <a href="#" width="1000" rel="bookmark">Dermatology</a>
                                         </h2>
                                         <div class="entry-meta">
                                             <span class="author">
@@ -78,7 +78,7 @@
                                             <div class="entry-content">
                                                 <header class="entry-header">
                                                     <h2 class="entry-title">
-                                                        <a href="blog-single-full.html" rel="bookmark">Dermatology</a>
+                                                        <a href="#" rel="bookmark">Dermatology</a>
                                                     </h2>
 
 

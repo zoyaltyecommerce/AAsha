@@ -108,7 +108,7 @@ The Hospital has trained staff including nurses; full time doctors and support s
                                             <header class="entry-header">
 
                                                 <h2 class="entry-title">
-                                                    <a href="blog-single-right.html" rel="bookmark">Cardiology</a>
+                                                    <a href="#" rel="bookmark">Cardiology</a>
                                                 </h2>
 
                                                 <div class="entry-meta">
@@ -193,7 +193,7 @@ The Hospital has trained staff including nurses; full time doctors and support s
                                 <header class="entry-header">
 
                                     <h2 class="entry-title">
-                                        <a href="blog-single-right.html" rel="bookmark">General Medicine</a>
+                                        <a href="#" rel="bookmark">General Medicine</a>
                                     </h2>
 
                                     <div class="entry-meta">
@@ -244,7 +244,7 @@ The Hospital has trained staff including nurses; full time doctors and support s
                             <div class="entry-content">
                                 <header class="entry-header">
                                     <h2 class="entry-title">
-                                        <a href="blog-single-right.html" rel="bookmark">Health Camp</a>
+                                        <a href="#"rel="bookmark">Health Camp</a>
                                     </h2>
 
                                     <div class="entry-meta">

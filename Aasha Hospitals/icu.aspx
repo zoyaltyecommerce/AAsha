@@ -77,7 +77,7 @@
                                             <div class="entry-content">
                                                 <header class="entry-header">
                                                     <h2 class="entry-title">
-                                                        <a href="blog-single-full.html" rel="bookmark">ICU</a>
+                                                        <a href="#" rel="bookmark">ICU</a>
                                                     </h2>
 
 
